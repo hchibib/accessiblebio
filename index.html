@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A bio page about Henry Chibib, a senior computer science student at Texas A&M, with interests in accessibility, sports, geography, and rock music.">
+    <title>Accessible Web Page Bio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+    <main>
+        <section aria-labelledby="bio-heading">
+            <h2 id="bio-heading">Bio</h2>
+            <img id="portrait" src="portrait.jpg" alt="A photo of Henry Chibib, a senior computer science student at Texas A&M" width="200">
+            <p>
+                Hello! My name is <strong>Henry Chibib</strong>, and I am a senior computer science student at <strong>Texas A&M University</strong>. I am passionate about creating inclusive and accessible technology to ensure that everyone has a fair opportunity to succeed. My interest in accessibility stems from my belief that technology should be designed with all users in mind, regardless of their abilities.
+            </p>
+        </section>
+
+        <section aria-labelledby="interests-heading">
+            <h2 id="interests-heading">Interests</h2>
+            <p>
+                Outside of my academic pursuits, I enjoy a variety of hobbies and interests, including:
+            </p>
+            <ul>
+                <li><strong>Sports:</strong> I am an avid fan of football, basketball, and soccer. I love both watching and playing these sports.</li>
+                <li><strong>Geography:</strong> I have a deep fascination with maps, cultures, and the diversity of our world.</li>
+                <li><strong>Rock Music:</strong> I enjoy listening to and exploring the history of rock music, from classic bands to modern artists.</li>
+            </ul>
+            <img src="football.jpeg" alt="Texas A&M football players celebrating a touchdown">
+        </section>
+
+        <section aria-labelledby="accessibility-heading">
+            <h2 id="accessibility-heading">Accessibility</h2>
+            <p>
+                I am deeply committed to promoting accessibility in technology. I believe that everyone deserves equal access to information and resources, and I strive to incorporate accessibility best practices into my work. Whether it's through designing user-friendly interfaces or advocating for inclusive design, I aim to make a positive impact in this field.
+            </p>
+            <!-- Inserting decorative image -->
+            <img src="decorative.jpeg" alt="" aria-hidden="true" id="decorative-image">
+        </section>
+
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <p>
+                If you'd like to connect or discuss potential projects, feel free to reach out using the form below:
+            </p>
+            <form action="mailto:henry.chibib@tamu.edu" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+</html>
